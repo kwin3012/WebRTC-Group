@@ -35,9 +35,9 @@ let joinStream = async() => {
 
     let player = `<div class="video__container" id="user-container-${uid}">
                     <div class="video-player" id="user-${uid}"></div>
-                </div>`
+                  </div>`
 
-    document.getElementById('streams__container').insertAdjacentElement('beforeend',player);
+    document.getElementById('streams__container').insertAdjacentHTML('beforeend',player);
     localTracks[1].play(`user-${uid}`)
 }
 
